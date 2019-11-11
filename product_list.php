@@ -23,6 +23,7 @@
                         <!-- Action switch --> 
                         <td><select name="action_switcher" class="options" onchange="action_function()" id="action_switcher">
                             <option value="default">Select...</option>
+                            <!-- Mass Delete Action will call the action to delete selected items --> 
                             <option value="includes/delete_action.php">Mass Delete Action</option>
                             <!-- Action button, value dinamyc assigned depends on the action switch selection --> 
                         <td><input type="submit" name="Apply" value="Apply" form="form1" class="save"></td>
