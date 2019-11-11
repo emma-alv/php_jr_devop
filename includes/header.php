@@ -11,6 +11,6 @@
 <body>
     <div class="wrapper">
         <header>
-            <h1>Scandiweb Junior PHP developer Test</h1>
+            <h1><?php echo $my_name; ?></h1>
         </header>
         <div class="main">
