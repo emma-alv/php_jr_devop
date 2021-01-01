@@ -3,6 +3,7 @@
         $my_name='Emmanuel Rodriguez Alvarado';
         $types = array('Office Supplier', 'Office Furniture', 'Others');
         include("includes/header.php");
+        include("includes/db_actions.php")
 ?>
 <script>
     // Special attributes dynamically changed when type is switched
@@ -24,7 +25,7 @@
 </script>
     <div>
         <div class='top_title'>
-            <h2>Product Add</h1>
+            <h2>Product Add </h1>
         </div><!--End top title section--> 
         <div class='action'>
             <!-- Action button--> 
@@ -35,7 +36,7 @@
     <hr>
     <div>
         <!-- Form of values for the POST method --> 
-        <form method="post" id="form1" action="includes/add_action.php">
+        <form method="GET" id="form1" action="<?php add_action(); ?>">
             <table>
                 <tr>
                     <td>SKU</td>

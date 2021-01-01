@@ -3,11 +3,12 @@
     $sku_to_delete = array();
 
     //Filter to storage only SKU values from POST request
-    foreach($_POST as $item){
+    foreach($_GET as $item){
         if ($item != "Apply" and $item != "includes/delete_action.php"){
             array_push($sku_to_delete, $item);
         }
     }
+
     //Connect Database
     $conn=mysqli_connect('localhost','root','') or die(mysqli_error());
 

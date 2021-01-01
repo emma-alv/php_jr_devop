@@ -1,14 +1,14 @@
 <?php
     //Get values from POST request
-    $sku=$_POST['sku'];
-    $name=$_POST['name'];
-    $price=$_POST['price'];
-    $type=$_POST['type'];
-    $size=$_POST['size'];
-    $height=$_POST['height'];
-    $width=$_POST['width'];
-    $length=$_POST['length'];
-    $weight=$_POST['weight'];
+    $sku=$_GET['sku'];
+    $name=$_GET['name'];
+    $price=$_GET['price'];
+    $type=$_GET['type'];
+    $size=$_GET['size'];
+    $height=$_GET['height'];
+    $width=$_GET['width'];
+    $length=$_GET['length'];
+    $weight=$_GET['weight'];
 
     //Connect Database
     $conn=mysqli_connect('10.0.10.30','web_php','php_p4ssw0rd') or die(mysqli_error());

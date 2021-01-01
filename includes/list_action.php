@@ -1,12 +1,12 @@
 <?php
     //Connect Database
-    $conn=mysqli_connect('localhost','root','') or die(mysqli_error());
+    $conn=mysqli_connect('10.0.10.30','web_php','php_p4ssw0rd') or die(mysqli_error());
     
     //Select Database
-    $select_db=mysqli_select_db($conn,'inventory')or die(mysqli_error());
+    $select_db=mysqli_select_db($conn,'types')or die(mysqli_error());
 
     //SQL Query to insert data
-    $sql="SELECT * FROM office_items";
+    $sql="SELECT * FROM inventory";
     $result=mysqli_query($conn, $sql) or die(mysqli_error());
     
     //If no errors
